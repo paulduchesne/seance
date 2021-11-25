@@ -1,4 +1,4 @@
-#N canvas 276 257 862 471 12;
+#N canvas 631 182 862 471 12;
 #X obj 239 297 dac~;
 #X obj 333 104 osc~ 2;
 #X obj 319 147 *~;
@@ -10,6 +10,8 @@
 #X obj 411 94 osc~ 900;
 #X obj 425 134 osc~ 0.1;
 #X obj 396 218 *~ 0.2;
+#X obj 589 110 loadbang;
+#X msg 596 178 \; pd dsp 1;
 #X connect 1 0 2 1;
 #X connect 2 0 0 1;
 #X connect 3 0 0 0;
@@ -20,3 +22,4 @@
 #X connect 8 0 7 0;
 #X connect 9 0 7 1;
 #X connect 10 0 0 1;
+#X connect 11 0 12 0;
